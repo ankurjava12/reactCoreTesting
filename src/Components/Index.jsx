@@ -9,7 +9,9 @@ function Index() {
 
   const getWeatherForecast = async () => {
     try {
-      const response = await fetch("https://localhost:7267/WeatherForecast");
+      const response = await fetch(
+        "https://151.106.39.153/reactCoreTesting/WeatherForecast"
+      );
       const data = await response.json();
       setWeather(data);
     } catch (error) {
